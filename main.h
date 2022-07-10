@@ -1,11 +1,15 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
+#include <stdlib.h>
 #include <stdarg.h>
+#include <unistd.h>
+
 /**
- * struct print - structure for printing various types
- * @t: type to print
- * @f: function to print
+ * struct print - defines a structure that prints
+ *                various functions and symbols
+ * @t: type
+ * @f: function
  */
 typedef struct print
 {
