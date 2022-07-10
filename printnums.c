@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * print_i - prints an integer
- * @i: integer to print
+ * print_i - prints integers
+ * @i: integer
  *
- * Return: number of chars and digits printed
+ * Return: number of characters and integers printed
  */
 int print_i(va_list i)
 {
@@ -39,10 +39,10 @@ int print_i(va_list i)
 }
 
 /**
- * print_d - prints a decimal
- * @d: decimal to print
+ * print_d - prints decimals
+ * @d: decimal
  *
- * Return: number of chars and digits printed
+ * Return: number of characters and integers printed
  */
 int print_d(va_list d)
 {

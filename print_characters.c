@@ -1,25 +1,24 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- * print_c - prints a char
- * @c: char to print
+ * print_c - prints characters
+ * @c: character
  *
- * Return: always 1
+ * Return: Always 1 (success)
  */
 int print_c(va_list c)
 {
-	char ch = (char)va_arg(c, int);
+	char c = (char)va_arg(c, int);
 
-	_putchar(ch);
+	_putchar(c);
 	return (1);
 }
 
 /**
- * print_s - prints a string
- * @s: string to print
+ * print_s - prints strings
+ * @s: string
  *
- * Return: number of chars printed
+ * Return: number of characters printed
  */
 int print_s(va_list s)
 {
