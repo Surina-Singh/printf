@@ -18,6 +18,7 @@ static int (*check_specs(const char *format))(va_list)
 		{"x", print_x},
 		{"X", print_X},
 		{"S", print_S},
+		{"p", print_p},
 		{'\0', NULL}
 	};
 	for (i = 0; p[i].t != NULL; i++)
