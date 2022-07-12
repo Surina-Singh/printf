@@ -1,5 +1,24 @@
 #include "main.h"
 /**
+ * _power - calculates an exponent
+ * @base: base of exponent
+ * @exponent: exponent of number
+ *
+ * Return: base ^ exponent
+ */
+static unsigned long _power(unsigned int base, unsigned int exponent)
+{
+	unsigned int i;
+	unsigned long ans = base;
+
+	for (i = 1; i < exponent; i++)
+	{
+		ans *= base;
+	}
+	return (ans);
+}
+
+/**
  * print_p - prints an address
  * @p: address to print
  * Return: number of characters to print
@@ -26,7 +45,7 @@ int print_p(va_list p)
 	_putchar('x');
 	count = 2;
 
-	m = _pow(16, 15);
+	m = _power(16, 15);
 	a[0] = n / m;
 	for (i = 1; i < 16; i++)
 	{
