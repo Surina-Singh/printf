@@ -28,11 +28,11 @@ int print_p(va_list p)
 	int count = 0;
 	unsigned int a[16];
 	unsigned int i, sum;
-	unsigned long n, m;
+	unsigned long x, y;
 	char *str = "(nil)";
 
-	n = va_arg(p, unsigned long);
-	if (n == 0)
+	x = va_arg(p, unsigned long);
+	if (x == 0)
 	{
 		for (i = 0; str[i]; i++)
 		{
@@ -45,12 +45,12 @@ int print_p(va_list p)
 	_putchar('x');
 	count = 2;
 
-	m = _power(16, 15);
-	a[0] = n / m;
+	y = _power(16, 15);
+	a[0] = x / y;
 	for (i = 1; i < 16; i++)
 	{
-		m /= 16;
-		a[i] = (n / m) % 16;
+		y /= 16;
+		a[i] = (x / y) % 16;
 	}
 	for (i = 0, sum = 0; i < 16; i++)
 	{
