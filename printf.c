@@ -2,7 +2,6 @@
 /**
  * check_specs - Valid format specifier checker
  * @format: format specifier
- *
  * Return: If valid function - return pointer. Otherwise NULL
  */
 static int (*check_specs(const char *format))(va_list)
@@ -20,7 +19,6 @@ static int (*check_specs(const char *format))(va_list)
 		{"X", print_X},
 		{'\0', NULL}
 	};
-
 	for (i = 0; p[i].t != NULL; i++)
 	{
 		if (*(p[i].t) == *format)
@@ -30,11 +28,9 @@ static int (*check_specs(const char *format))(va_list)
 	}
 	return (p[i].f);
 }
-
 /**
  * _printf - print format
  * @format: argument types passed to the function
- *
  * Return: prints number of characters
  */
 int _printf(const char *format, ...)
@@ -47,12 +43,9 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-
 	va_start(pf, format);
-
 	i = 0;
 	count = 0;
-
 	while (format[i])
 	{
 		for (; format[i] != '%' && format[i]; i++)
@@ -60,32 +53,24 @@ int _printf(const char *format, ...)
 			_putchar(format[i]);
 			count++;
 		}
-
 		if (!format[i])
 			return (count);
-
 		f = check_specs(&format[i + 1]);
-
 		if (f != NULL)
 		{
 			count += f(pf);
 			i += 2;
 			continue;
 		}
-
 		if (!format[i + 1])
 			return (-1);
-
 		_putchar(format[i]);
 		count++;
-
 		if (format[i + 1] == '%')
 			i += 2;
-
 		else
 			i++;
 	}
 	va_end(pf);
-
 	return (count);
 }
