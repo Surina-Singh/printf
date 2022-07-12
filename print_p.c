@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * _power - calculates an exponent
+ * _power - find the exponent to the base
  * @base: base of exponent
  * @exponent: exponent of number
- *
  * Return: base ^ exponent
  */
 static unsigned long _power(unsigned int base, unsigned int exponent)

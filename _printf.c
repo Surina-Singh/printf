@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * check_specs - Valid format specifier checker
+ * specs_checks - Valid format specifier checker
  * @format: format specifier
  * Return: If valid function - return pointer. Otherwise NULL
  */
-static int (*check_specs(const char *format))(va_list)
+static int (*specs_checks(const char *format))(va_list)
 {
 	unsigned int i;
 	printf_t p[] = {
@@ -57,7 +57,7 @@ int _printf(const char *format, ...)
 		}
 		if (!format[i])
 			return (count);
-		f = check_specs(&format[i + 1]);
+		f = specs_checks(&format[i + 1]);
 		if (f != NULL)
 		{
 			count += f(pf);
