@@ -21,6 +21,7 @@ The conversion specifiers are:
 + %0 - Print unsigned octal integers.
 + %x - Print unsigned hexadecimal integers in lowercase.
 + %X - Print unsigned hexadecimal integers in UPPERCASE.
++ %S - Print string
 
 ---
 
@@ -75,3 +76,4 @@ The conversion specifiers are:
 ### 2. With a face like mine, I do better in print
 ### 3. What one has not experienced, one will never understand in print
 ### 4. Nothing in fine print is ever good news
+### 5. My weakness is wearing too much leopard print
