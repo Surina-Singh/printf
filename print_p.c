@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _power - find the exponent to the base
- * @base: base of exponent
- * @exponent: exponent of number
+ * _power - Find the exponent to the base.
+ * @base: Base of exponent.
+ * @exponent: Exponent of number.
  * Return: base ^ exponent
  */
 static unsigned long _power(unsigned int base, unsigned int exponent)
@@ -18,9 +18,9 @@ static unsigned long _power(unsigned int base, unsigned int exponent)
 }
 
 /**
- * print_p - prints an address
- * @p: address to print
- * Return: number of characters to print
+ * print_p - Prints an address.
+ * @p: Address to print.
+ * Return: Number of characters to print.
  */
 int print_p(va_list p)
 {

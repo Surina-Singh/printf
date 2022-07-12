@@ -1,23 +1,25 @@
 #include "main.h"
 /**
- * print_unsigned - prints an unsigned integer
- * @u: unsigned integer to convert
- *
- * Return: number of digits
+ * print_unsigned - Prints an unsigned integer.
+ * @u: Unsigned integer to convert.
+ * Return: Number of digits.
  */
 int print_unsigned(va_list u)
 {
 	unsigned int a[10];
-	unsigned int i, m, n, sum;
+	unsigned int i, x, y, sum;
 	int count;
 
-	n = va_arg(u, unsigned int);
-	m = 1000000000; /* (10 ^ 9) */
-	a[0] = n / m;
-	for (i = 1; i < 10; i++)
+	x = va_arg(u, unsigned int);
+	y = 1000000000;
+	a[0] = x / y;
+
+	i = 1;
+
+	for (; i < 10; i++)
 	{
-		m /= 10;
-		a[i] = (n / m) % 10;
+		y /= 10;
+		a[i] = (x / y) % 10;
 	}
 	for (i = 0, sum = 0, count = 0; i < 10; i++)
 	{
