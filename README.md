@@ -18,7 +18,7 @@ The conversion specifiers are:
 + %i - Print integers.
 + %b - Print unsigned interger to binary.
 + %u - Print unsigned integers.
-+ %0 - Print unsigned octal integers.
++ %o - Print unsigned octal integers.
 + %x - Print unsigned hexadecimal integers in lowercase.
 + %X - Print unsigned hexadecimal integers in UPPERCASE.
 + %S - Print string
