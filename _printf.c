@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * specs_checks - Valid format specifier checker
- * @format: format specifier
- * Return: If valid function - return pointer. Otherwise NULL
+ * specs_checks - Validates format specifier checker.
+ * @format: Format specifier.
+ * Return: If valid function - return pointer.
+ *         Otherwise NULL.
  */
 static int (*specs_checks(const char *format))(va_list)
 {
@@ -31,9 +32,9 @@ static int (*specs_checks(const char *format))(va_list)
 	return (p[i].f);
 }
 /**
- * _printf - print format
- * @format: argument types passed to the function
- * Return: prints number of characters
+ * _printf - Prints format.
+ * @format: Argument types passed to the function.
+ * Return: Prints number of characters.
  */
 int _printf(const char *format, ...)
 {
