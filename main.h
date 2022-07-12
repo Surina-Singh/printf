@@ -7,7 +7,7 @@
 #include <string.h>
 
 /**
- * struct print - defines a structure that prints
+ * struct print - Defines a structure that prints
  *                various functions and symbols
  * @t: type
  * @f: function
@@ -31,4 +31,5 @@ int print_x(va_list x);
 int print_X(va_list X);
 int print_S(va_list S);
 int print_p(va_list p);
+
 #endif
