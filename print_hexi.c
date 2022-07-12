@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_hex - Print unsigned integers in hex form.
- * @n: unsigned int
+ * @j: unsigned int
  * @c: flag to determine case of printing,
  *     (0 = lower, 1 = upper).
  * Return: Digits printed.
