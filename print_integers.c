@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * print_int - prints integers
- * @i: integer
- *
- * Return: number of characters and integers printed
+ * print_int - Prints integers.
+ * @i: Integer.
+ * Return: Number of characters and integers printed.
  */
 int print_int(va_list i)
 {

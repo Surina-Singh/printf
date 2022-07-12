@@ -1,29 +1,28 @@
 #include "main.h"
 /**
- * print_hex - Print unsigned integers in hex form
+ * print_hex - Print unsigned integers in hex form.
  * @n: unsigned int
  * @c: flag to determine case of printing,
- *     (0 = lower, 1 = upper)
- *
- * Return: Digits printed
+ *     (0 = lower, 1 = upper).
+ * Return: Digits printed.
  */
-int print_hex(unsigned int n, unsigned int c)
+int print_hex(unsigned int j, unsigned int c)
 {
 	unsigned int a[8];
-	unsigned int i, m, sum;
+	unsigned int i, k, sum;
 	char diff;
 	int count;
 
-	m = 268435456; /* (16 ^ 7) */
+	k = 268435456;
 	if (c)
 		diff = 'A' - ':';
 	else
 		diff = 'a' - ':';
-	a[0] = n / m;
+	a[0] = j / k;
 	for (i = 1; i < 8; i++)
 	{
-		m /= 16;
-		a[i] = (n / m) % 16;
+		k /= 16;
+		a[i] = (j / k) % 16;
 	}
 	for (i = 0, sum = 0, count = 0; i < 8; i++)
 	{
@@ -40,9 +39,8 @@ int print_hex(unsigned int n, unsigned int c)
 	return (count);
 }
 /**
- * print_x - convert unsigned integer and prints it in lowercase hex notation
+ * print_x - Converts unsigned integer and prints it in lowercase hex notation
  * @x: unsigned integer
- *
  * Return: number of digits
  */
 int print_x(va_list x)
