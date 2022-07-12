@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_char - Print characters (%c)
- * @ar_list: Store the a list of characters
- * Return: num of parameters printed
+ * print_char - Print characters.
+ * @ar_list: Store the a list of characters.
+ * Return: Num of parameters printed.
  */
 int print_char(va_list ar_list)
 {
@@ -12,9 +12,9 @@ int print_char(va_list ar_list)
 }
 
 /**
-* print_string - print string (%s)
-* @ar_list: Store the a list of characters
-* Return: num of parameters printed
+* print_string - Prints string.
+* @ar_list: Store the a list of characters.
+* Return: Number of parameters printed.
 */
 int print_string(va_list ar_list)
 {

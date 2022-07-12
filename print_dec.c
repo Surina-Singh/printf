@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * print_dec - prints decimals
- * @d: decimal
- *
- * Return: number of characters and integers printed
+ * print_dec - Prints decimals.
+ * @d: Decimal
+ * Return: Number of characters and integers printed.
  */
 int print_dec(va_list d)
 {
